@@ -1,3 +1,4 @@
 class Character < ActiveRecord::Base
-  has_many :actors, :shows
+  belongs_to :show
+  belongs_to :actor
 end
